@@ -121,11 +121,14 @@ header:hover{
   height: 900px;
 
 }
+
 .main_sub2{
   width: 50%;
   height: 900px;
 
 }
+
+
 .txt{
   margin: 0 auto;
   text-align: center;
@@ -134,14 +137,23 @@ header:hover{
 .txt>h2{
   color: white;
   font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 3px;
 }
 .txt>.p{
   color: #Ffff;
   padding-bottom: 350px;
+  font-family: "Nanum Gothic", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .main_sub2>.txt>.p{
   color: #Ffff;
   padding-bottom: 350px;
+  font-family: "Nanum Gothic", serif;
+  font-style: normal;
 }
 .main_sub .button{
   text-align: right;
@@ -181,6 +193,9 @@ button:hover{
   text-align: left;
   font-size: 24px;
   margin-left: 50px;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .about1{
   margin: auto 0;
@@ -222,6 +237,8 @@ button:hover{
   position: relative;
 }
 .sub_right p{
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 700;
   color: #194E92;
   text-align: right;
   padding-top: 20px;
@@ -233,6 +250,9 @@ button:hover{
   font-weight: bold;
   color: #003271;
   text-align: right;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 p.text{
   padding-top: 100px;
@@ -259,6 +279,8 @@ p.text{
   line-height: 40px;
   color: #fff;
   font-size: 15px;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 500;
 }
 
 .sub_bottom>button{
@@ -310,9 +332,13 @@ p.text{
   line-height: 40px;
   font-size: 24px;
   color: #194E92;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .ment2{
   color: #8D8D8D;
+  font-family: "Gowun Dodum", sans-serif;
   font-size: 16px;
   line-height: 40px;
 }
@@ -346,23 +372,30 @@ p.text{
   text-align: left;
 }
 .frame37{
-  margin-top: 60px;
+  margin-top: 80px;
   text-align: right;
 }
 
 
 .csr_top>p{
-  margin-top: -60px;
+  margin-top: -50px;
   font-size: 24px;
   line-height: 40px;
   font-weight: bold;
   color: #EF537A;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 800;
 }
 .csr_bottom>p{
   font-size: 24px;
   line-height: 40px;
   font-weight: bold;
   color: #543499;
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 800;
+}
+.frame37p{
+  margin-top: -30px;
 }
 
 /* 브랜드 */
@@ -435,9 +468,19 @@ p.text{
 .con>li>div>a>img{
   margin-top: 60px;
   margin-right: 20px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+
+
 }
 .con>li>div>a:last-child{
   margin-right: 0;
+}
+.con>li>div>a>img:hover,.con>li>div>a{
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 .bal,.cheese,.juice ,.coffee,.grain,.baby_food,
 .health_food, .conven, .snack,.dessert,.base,.import,.export{
