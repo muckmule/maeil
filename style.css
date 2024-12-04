@@ -7,9 +7,12 @@ a{text-decoration: none; color: inherit;}
 img{max-width: 100%; vertical-align: top;}
 table{width: 100%; border-collapse: collapse;}
 button{cursor: pointer;}
-body{ width: 100%; color: #333;} 
-
-.wrap{position: relative;}
+body{ width: 100%; color: #333;  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.wrap{position: relative; overflow-x: "hidden";}
 .inner{ width: 100%; margin: auto; 
 background: #F0F0F0;}
 header>h1{
@@ -43,7 +46,10 @@ nav{
   top: 0px;
   margin: auto 0;
   padding-left: 200px;
- 
+  font-family: "Nanum Gothic", serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-style: normal;
   }
 nav>ul{
   display: flex;
@@ -83,6 +89,7 @@ nav>ul>li.on>a{
 
 }
 .sub li a{
+  margin-top: 5px;
   display: block; 
   padding: 5px; 
   text-align: center; 
@@ -100,7 +107,7 @@ header:hover{
 .menuBg{
   width: 100%; 
   background: #ffffff; 
-  height: 600px;
+  height: 550px;
   position:absolute; 
   top:70px; left: 0;
   z-index: 0; 
@@ -115,6 +122,7 @@ header:hover{
   background-size : cover;
   background-position: center;
   /* background: url(../img/main1.png); */
+
 }
 .main_sub{
   width: 50%;
@@ -141,6 +149,8 @@ header:hover{
   font-optical-sizing: auto;
   font-style: normal;
   letter-spacing: 3px;
+  text-shadow: 0px 4px 4px rgba(0,0,0,.25);
+
 }
 .txt>.p{
   color: #Ffff;
@@ -148,6 +158,8 @@ header:hover{
   font-family: "Nanum Gothic", serif;
   font-weight: 700;
   font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0,0,0,.25);
+
 }
 .main_sub2>.txt>.p{
   color: #Ffff;
@@ -165,6 +177,7 @@ header:hover{
 }
 
 .button>button{
+
   font-size: 15px;
   width: 100px;
   height: 40px;
@@ -172,6 +185,7 @@ header:hover{
   border: 1px solid #fff;
   border-radius: 30px;
   background: none;
+
 }
 button:hover{
   background: rgba(255, 255, 255, .5);
@@ -238,7 +252,7 @@ button:hover{
 }
 .sub_right p{
   font-family: "Gowun Dodum", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #194E92;
   text-align: right;
   padding-top: 20px;
@@ -284,19 +298,22 @@ p.text{
 }
 
 .sub_bottom>button{
-  margin-top: 270px;
-  margin-left: 110px;
+  margin-top: 285px;
+  margin-left: 185px;
   border: solid 1px #fff;
   background: none;
   color: #fff;
   border-radius: 25px;
-  width: 100px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  font-style: normal;
+  font-family: "Gowun Dodum", sans-serif;
+
 }
 
 .sub_bottom>button:hover{
-  width: 100px;
-  height: 40px;
+
   background: rgba(255, 255, 255, .5);
   color: #fff;
   border: 1px solid #fff;
@@ -345,7 +362,7 @@ p.text{
 
 .csr{
   width: 100%;
-  height: 1350px;
+  height: 1550px;
   text-align: center;
   background: #ffff;
   margin: 0 auto;
@@ -353,24 +370,24 @@ p.text{
 
 }
 .img>img{
-  margin-top: 100px;
-}
-.csr_top{
-  margin-top: 30px;
+  margin-top: 200px;
 
 }
+
 .csr_top{
-  margin-top: 30px;
+  margin-top: 100px;
 
 }
 .csr_bottom{
   width: 100%;
-  margin-top: -90px;
+  margin-top: 0px;
 }
 
-.group23{
+.frame35{
   text-align: left;
+
 }
+
 .frame37{
   margin-top: 80px;
   text-align: right;
@@ -445,6 +462,7 @@ p.text{
   height: 40px;
   font-size: 13px;
   background: none;
+  letter-spacing: 1px;
 }
 .category>li:last-child>a>button{
   margin-right: 0;
@@ -494,6 +512,11 @@ footer{
   background-repeat: no-repeat;
   background-size : cover;
   padding-top: 650px;
+  font-family: "Gowun Dodum", sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 400px;
+
 }
 .footer_top{
   width: 1400px;
@@ -564,7 +587,7 @@ footer{
   width: 1200px;
 }
 .footer_bottom select{
-  width: 180px;
+  width: 150px;
   height: 50px;
   border-radius: 30px;
   background: none;
@@ -572,9 +595,7 @@ footer{
   color: #fff;
   margin-top: 10px;
   text-align: center;
-  font-size: 15px;
-}
+  font-size: 17px;
+  font-family: "Gowun Dodum", sans-serif;
 
-option{
-  background: none;
 }

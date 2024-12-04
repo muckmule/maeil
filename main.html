@@ -12,8 +12,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
   <div class="wrap">
+    
     <div class="inner">
         <header>
             <h1><a href="#" class="logo"><img src="img/brand/logo.png" alt="매일유업로고"></a></h1>
@@ -48,7 +55,7 @@
                                     <li><a href="#">유지류/음료베이스</a></li>
                                     <li><a href="#">수입상품</a></li>
                                     <li><a href="#">수출상품</a></li>
-                                    <li><a href="#">전체</a></li>
+                                    <!-- <li><a href="#">전체</a></li> -->
                                     
                                 </ul>
                             </li>
@@ -114,7 +121,7 @@
                     
                 </div>
             </section>
-            <section class="about">
+            <section class="about" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="img/about.png" alt="about">
                 <div class="about1">
                     <!-- <img src="img/about.png" alt="about"> -->
@@ -166,17 +173,23 @@
                 </div>
             </section>
             <section class="csr">
-                <p class="img"><img src="img/csr.png" alt="csr"></p>
-                <div class="csr_top">
-                    <p class="group23"><img src="img/Frame 35.png" alt="앱솔루트"></p>
+                <p class="img" data-aos="fade" data-aos-duration="1500"><img src="img/csr.png" alt="csr"></p>
+                <div class="csr_top"                         
+                data-aos="fade-right"
+                data-aos-offset="400"
+                data-aos-duration="1500">
+                    <p class="frame35"><img src="img/Frame 35.png" alt="앱솔루트" ></p>
                     
                     <p>특수 유아식 8종 12개 제품을 순수 자체기술로 개발하여<br>
                     지난 1999년부터 공급하고 있습니다.</p>
                     
                 
                 </div>
-                <div class="csr_bottom">
-                    <p class="frame37"><img src="img/Frame 37.png" alt="앱솔루트"></p>
+                <div class="csr_bottom" 
+                    data-aos="fade-left"
+                    data-aos-offset="400"
+                    data-aos-duration="1500">
+                    <p class="frame37"><img src="img/Frame 37.png" alt="앱솔루트" ></p>
                     
                     <p class="frame37p">소화가 잘되는 우유는 매출의 1%를<br> 
                     사단법인 어르신의 안부를 묻는 우유배달에 기부합니다.</p>
@@ -187,7 +200,7 @@
             
             
             </section>
-            <section class="brand">
+            <section class="brand" data-aos="fade-down" data-aos-duration="1500">
                 <div class="brand_">
                     <img src="img/brand.png" alt="브랜드">
                 </div>
